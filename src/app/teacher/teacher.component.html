@@ -1,0 +1,109 @@
+<div id="main">
+  <!-- basic Select Box JavaScript Example -->
+<div class="selectboxes">
+<select id="class" onChange="document.getElementById('classChosen').value=this.options[this.selectedIndex].value;document.getElementById('submitButton').disabled='';">
+  <option value="">Select a Class</option>
+  <option value="IX">IX</option>
+  <option value="X">X</option>
+  <option value="XI">XI</option>
+  <option value="XII">XII</option>
+</select>
+<select id="subject" onChange="document.getElementById(subjectChosen').value=this.options[this.selectedIndex].value;document.getElementById('submitButton').disabled='';">
+  <option value="">Select a Subject</option>
+  <option value="biology">Biology</option>
+
+</select>
+
+<select id="chapter" onChange="document.getElementById(chapterChosen').value=this.options[this.selectedIndex].value;document.getElementById('submitButton').disabled='';">
+  <option value="">Select a Chapter</option>
+  <option value="chapter1">The Living World</option>
+  <option value="chapter2">Biological Classification</option>
+  <option value="chapter3">Plant Kingdom</option>
+
+</select>
+<select id="topic" onChange="document.getElementById(topicChosen').value=this.options[this.selectedIndex].value;document.getElementById('submitButton').disabled='';">
+  <option value="">Select a topic</option>
+  <option value="chapter1">Topic1</option>
+  <option value="chapter2"> Topic2</option>
+  <option value="chapter3">Topic3</option>
+
+</select>
+<select id="language" onChange="document.getElementById(languageChosen').value=this.options[this.selectedIndex].value;document.getElementById('submitButton').disabled='';">
+  <option value="">Select a Language</option>
+  <option value="chapter1">English</option>
+  <option value="chapter2">Hindi</option>
+
+</select>
+<select id="board" onChange="document.getElementById(boardChosen').value=this.options[this.selectedIndex].value;document.getElementById('submitButton').disabled='';">
+  <option value="">Select a Board</option>
+  <option value="chapter1">CBSE</option>
+  <option value="chapter2">ISC</option>
+
+</select>
+
+</div>
+  <table>
+    <thead>
+			<th>Number of Questions</th>
+			<th>Question Type</th>
+      <th>Difficulty Level</th>
+      <th>Solution</th>
+      <th>Condition</th>
+      <th></th>
+
+
+
+
+		</thead>
+    <tbody id="data" class="data-table data-table-horizontal data-table-highlight">
+      <tr>
+        <td><select id="class" onChange="document.getElementById('classChosen').value=this.options[this.selectedIndex].value;document.getElementById('submitButton').disabled='';">
+  <option value="">Select the number of questions</option>
+  <option value="5">5</option>
+  <option value="10">10</option>
+  <option value="15">15</option>
+  <option value="20">20</option>
+</select>
+</td>
+        <td><select id="class" onChange="document.getElementById('classChosen').value=this.options[this.selectedIndex].value;document.getElementById('submitButton').disabled='';">
+  <option value="">Select the type of questions</option>
+  <option value="numeric">Numeric</option>
+  <option value="single">Single</option>
+  <option value="numeric">Multiple</option>
+
+</select>  </td>
+        <td><select id="class" onChange="document.getElementById('classChosen').value=this.options[this.selectedIndex].value;document.getElementById('submitButton').disabled='';">
+  <option value="">Select the difficulty level</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+
+</select>  </td>
+        <td><select id="class" onChange="document.getElementById('classChosen').value=this.options[this.selectedIndex].value;document.getElementById('submitButton').disabled='';">
+  <option value="">Solution availability</option>
+  <option value="1">Yes</option>
+  <option value="2">No</option>
+
+
+</select>  </td>
+        <td><select id="class" onChange="document.getElementById('classChosen').value=this.options[this.selectedIndex].value;document.getElementById('submitButton').disabled='';">
+  <option value="">Select Condition</option>
+  <option value="1">New Questions</option>
+  <option value="2">Top Questions</option>
+
+
+</select>  </td>
+
+        <td><a type="button" value="Delete" onclick="deleteRow(this)"><i class="fa fa-trash-o fa-fw"></i></a></td>
+      </tr>
+
+
+  </table>
+  <div class="pull-right">
+    <input type="button" value="Add" class="top-buffer" onclick="addRow('data')" />
+  </div>
+
+</div>
+<button class="generate"/>Generate Questions</button>

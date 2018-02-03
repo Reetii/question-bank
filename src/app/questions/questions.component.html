@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div id="top">
+    <div class="search-area">
+      <h1>Questions</h1>
+
+
+    </div>
+
+    <div class="question" *ngFor="let question in questions" data-color="{{ question.votes | voteColor }}">
+      <div class="votes">
+        <div class="upvote" (click)="vote('up', question)"></div>
+        <div class="number-of-votes">{{ question.votes }}</div>
+        <div class="downvote" (click)="vote('down', question)"></div>
+      </div>
+
+      <div class="question-and-answer">
+        <br>
+        <h2>{{ question.question }}</h2>
+        <p>{{ question.choice1 }}</p>
+        <p>{{question.choice2}}</p>
+        <p>{{question.choice3}}</p>
+        <p>{{question.choice4}}</p>
+        <br>
+
+      </div>
+    </div>
+  </div>
+</div>
+<button class="generatePDF">Generate PDF</button>

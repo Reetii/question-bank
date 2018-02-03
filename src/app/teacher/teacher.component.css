@@ -1,0 +1,83 @@
+.selectboxes{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left:5%;
+}
+.selectboxes input[type="text"],select,input[type="button"]{
+  margin-left:1%;
+  padding:5px;
+  border-radius:3px;
+  border:1px solid #ccc;
+  height:30px
+}
+
+
+h1 {
+  font-family: Arial;
+  font-size: 20px;
+  color: #666;
+}
+
+table {
+   border: solid 1px #eee;
+  border-collapse: collapse;
+  border-spacing: 2%;
+  font: normal 13px Arial, sans-serif;
+  width: 100%;
+}
+thead{
+  border: solid 1px #eee;
+  width: 100%;
+  padding: 2%;
+  z-index: 11;
+  color:#333;
+}
+th{
+  width: 100%;
+  padding: 2%;
+  z-index: 11;
+  color:#333;
+}
+table tr{
+  border: solid 1px #eee;
+}
+
+ tbody td {
+
+  color: #333;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+ tbody tr:hover {
+  background-color: #f8f8f8;
+}
+
+/*tbody td {
+  border-left: none;
+  border-right: none;
+}*/
+
+.top-buffer {
+  margin-top: 20px;
+}
+
+.pull-right {
+  float: right;
+}
+.pull-centre{
+  margin:0 auto;
+}
+#main {
+  width: 70%;
+  margin: 0 auto;
+}
+.generate{
+  margin-top:5%;
+  margin-left:45%;
+  padding:5px;
+  border-radius:3px;
+  border:1px solid #ccc;
+  height:30px;
+
+}
